@@ -1,0 +1,3 @@
+[submodule "deep-latent-sequence-model"]
+	path = deep-latent-sequence-model
+	url = https://github.com/cindyxinyiwang/deep-latent-sequence-model.git
