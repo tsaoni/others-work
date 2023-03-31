@@ -1,0 +1,388 @@
+2023-01-29 00:00:22,000 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:40] - INFO: Namespace(sample_number=50, sample_batch_size=50, fill_mask_model='BART', sentiment_batch_size=64, prob_batch_size=512, dataset='yelp', ll_ratio_threshold=1, topk=50, attack_unit='phrases', ll_model='roberta', use_use='True', use_ll='False', use_threshold=0.7, use_window=30, len_filter='True', phrase_depth=4, length_restriction=3)
+2023-01-29 00:00:22,460 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:88] - INFO: Initializing native server...
+2023-01-29 00:00:22,460 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:98] - INFO: java -Xmx4g -cp "stanford-corenlp-4.5.0/*" edu.stanford.nlp.pipeline.StanfordCoreNLPServer -port 9031
+2023-01-29 00:00:22,472 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:107] - INFO: Server shell PID: 2197572
+2023-01-29 00:00:23,474 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:118] - INFO: The server is available.
+2023-01-29 00:00:23,609 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,219 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,255 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,301 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,333 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,401 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,651 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,686 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,717 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,795 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,913 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:25,974 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,016 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,052 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,073 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,131 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,147 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,193 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,402 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,414 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,551 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:26,618 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/stanfordcorenlp/corenlp.py[line:237] - INFO: {'properties': "{'annotators': 'pos,parse', 'outputFormat': 'json'}", 'pipelineLanguage': 'en'}
+2023-01-29 00:00:31,407 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/fairseq/file_utils.py[line:70] - INFO: loading archive file ./bart.base
+2023-01-29 00:00:34,372 - /home/yuling/miniconda3/envs/plat/lib/python3.9/site-packages/fairseq/tasks/denoising.py[line:152] - INFO: dictionary: 51200 types
+2023-01-29 00:00:41,613 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:75] - INFO: model loading finished!
+2023-01-29 00:00:42,384 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:90] - INFO: begin attack!
+2023-01-29 00:00:42,385 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:98] - INFO: orginal sentence: Flat Iron Steak was prepared very well , delivered Medium Rare exactly . Exemplary service and friendly staff . My iced tea glass was refilled regularly . Nothing to complain about here . Good chain restaurant with predictably good quality and predictably good service .
+2023-01-29 00:00:42,385 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:99] - INFO: label: Postive
+2023-01-29 00:00:42,385 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:114] - INFO: original probability: 0.9999
+2023-01-29 00:00:42,429 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:131] - INFO: attack order:  Exemplary service and friendly staff    predictably good quality    Good chain restaurant    very well    about here    Medium Rare    predictably    Flat Iron Steak    good service    My iced tea glass    refilled regularly    exactly
+2023-01-29 00:00:43,171 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:43,171 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 50
+2023-01-29 00:00:43,171 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 50
+2023-01-29 00:00:43,171 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 32
+2023-01-29 00:00:43,171 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:43,344 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 16
+2023-01-29 00:00:43,422 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Exemplary service and friendly staff, new phrase--> It also used very little cheese, orig_prob--> 0.9999, attack_prob--> 0.9999
+2023-01-29 00:00:44,222 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:44,222 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 45
+2023-01-29 00:00:44,222 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 44
+2023-01-29 00:00:44,223 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 22
+2023-01-29 00:00:44,223 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:44,326 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 8
+2023-01-29 00:00:44,377 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> predictably good quality, new phrase--> easy food, orig_prob--> 0.9999, attack_prob--> 0.9998
+2023-01-29 00:00:45,136 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:45,136 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 39
+2023-01-29 00:00:45,136 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 39
+2023-01-29 00:00:45,137 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 15
+2023-01-29 00:00:45,137 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:45,239 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 6
+2023-01-29 00:00:45,287 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Good chain restaurant, new phrase--> It was served well, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:00:46,054 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:46,055 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 42
+2023-01-29 00:00:46,055 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 38
+2023-01-29 00:00:46,055 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 21
+2023-01-29 00:00:46,055 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:46,169 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 15
+2023-01-29 00:00:46,244 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> very well, new phrase--> to order, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:00:47,064 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:47,064 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 45
+2023-01-29 00:00:47,065 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 39
+2023-01-29 00:00:47,065 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 10
+2023-01-29 00:00:47,065 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:47,108 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 2
+2023-01-29 00:00:47,140 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> about here, new phrase--> about here, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:00:47,936 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:47,936 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 45
+2023-01-29 00:00:47,936 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 45
+2023-01-29 00:00:47,937 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 14
+2023-01-29 00:00:47,937 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:48,007 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 8
+2023-01-29 00:00:48,057 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Medium Rare, new phrase--> without assistance and was packed, orig_prob--> 0.9998, attack_prob--> 0.9996
+2023-01-29 00:00:48,928 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:48,928 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 48
+2023-01-29 00:00:48,928 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 39
+2023-01-29 00:00:48,928 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 17
+2023-01-29 00:00:48,928 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:48,993 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 13
+2023-01-29 00:00:49,059 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> predictably, new phrase--> had, orig_prob--> 0.9996, attack_prob--> 0.9994
+2023-01-29 00:00:49,785 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:49,785 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 50
+2023-01-29 00:00:49,785 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 34
+2023-01-29 00:00:49,785 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 27
+2023-01-29 00:00:49,785 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:49,920 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 14
+2023-01-29 00:00:49,997 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Flat Iron Steak, new phrase--> The food itself, orig_prob--> 0.9994, attack_prob--> 0.9950
+2023-01-29 00:00:50,741 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:50,741 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 50
+2023-01-29 00:00:50,741 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 49
+2023-01-29 00:00:50,741 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 21
+2023-01-29 00:00:50,741 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:50,863 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 13
+2023-01-29 00:00:50,930 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> good service, new phrase--> a good crunch to it, orig_prob--> 0.9950, attack_prob--> 0.9687
+2023-01-29 00:00:51,761 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:51,761 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 49
+2023-01-29 00:00:51,761 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 49
+2023-01-29 00:00:51,761 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 28
+2023-01-29 00:00:51,761 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:51,929 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 17
+2023-01-29 00:00:52,016 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> My iced tea glass, new phrase--> It used only regular butter and, orig_prob--> 0.9687, attack_prob--> 0.8919
+2023-01-29 00:00:52,774 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:52,774 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 50
+2023-01-29 00:00:52,774 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 49
+2023-01-29 00:00:52,774 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 33
+2023-01-29 00:00:52,774 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:52,955 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 22
+2023-01-29 00:00:53,058 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> refilled regularly, new phrase--> left in the fridge unperformed, orig_prob--> 0.8919, attack_prob--> 0.1310
+2023-01-29 00:00:53,058 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:198] - INFO: attack success!
+2023-01-29 00:00:53,058 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:199] - INFO: adv sentence--> The food itself was prepared to order , delivered without assistance and was packed exactly . It also used very little cheese . It used only regular butter and was left in the fridge unperformed . Nothing to complain about here . It was served well with easy food and had a good crunch to it .
+2023-01-29 00:00:53,058 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:200] - INFO: adv label--> 1
+2023-01-29 00:00:53,059 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:212] - INFO: total examples--> 1, original_accuracy--> 1.0000, success_rate--> 1.0000
+
+
+2023-01-29 00:00:53,059 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:98] - INFO: orginal sentence: Already LOVE the doughnuts ... . . but when they were out of what I wanted , and gave it to me free when it was ready , they had my heart ! Way to go on excellent customer service ! ! !
+2023-01-29 00:00:53,059 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:99] - INFO: label: 1
+2023-01-29 00:00:53,059 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:114] - INFO: original probability: 0.9999
+2023-01-29 00:00:53,076 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:131] - INFO: attack order:  LOVE    on excellent customer service    the doughnuts    ....
+2023-01-29 00:00:53,393 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:53,393 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 49
+2023-01-29 00:00:53,393 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 44
+2023-01-29 00:00:53,393 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 31
+2023-01-29 00:00:53,393 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:53,501 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 16
+2023-01-29 00:00:53,556 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> LOVE, new phrase--> hungry for, orig_prob--> 0.9999, attack_prob--> 0.9833
+2023-01-29 00:00:53,820 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:53,820 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 24
+2023-01-29 00:00:53,821 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 22
+2023-01-29 00:00:53,821 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 20
+2023-01-29 00:00:53,821 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:53,882 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 16
+2023-01-29 00:00:53,929 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> on excellent customer service, new phrase--> boys!I'm in bed, orig_prob--> 0.9833, attack_prob--> 0.0238
+2023-01-29 00:00:53,929 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:198] - INFO: attack success!
+2023-01-29 00:00:53,929 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:199] - INFO: adv sentence--> Already hungry for the doughnuts .... . Way to go boys!I'm in bed !!!
+2023-01-29 00:00:53,929 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:200] - INFO: adv label--> 1
+2023-01-29 00:00:53,929 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:212] - INFO: total examples--> 2, original_accuracy--> 1.0000, success_rate--> 1.0000
+
+
+2023-01-29 00:00:53,929 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:98] - INFO: orginal sentence: Complete lack of respect for peoples time . Dirty office and a staff that has even less respect for their patients ! Don 't waste your time waiting here you 'll spend less time waiting and get better care in an er ! . I have been waiting 1hr and 30 mins past my 2nd appointment . Dr didn 't even know why I was there !
+2023-01-29 00:00:53,929 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:99] - INFO: label: 1
+2023-01-29 00:00:53,929 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:114] - INFO: original probability: 0.9998
+2023-01-29 00:00:53,993 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:131] - INFO: attack order:  for peoples    in an er    for their patients    better care    your time    my 2nd appointment    a staff    Dirty office    was there    even less    Dr    even    waiting    less time    Complete lack    time    respect
+2023-01-29 00:00:54,971 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:54,971 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 48
+2023-01-29 00:00:54,971 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 47
+2023-01-29 00:00:54,971 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 18
+2023-01-29 00:00:54,971 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:55,064 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 6
+2023-01-29 00:00:55,120 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> for peoples, new phrase--> for peoples, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:00:56,187 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:56,187 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 22
+2023-01-29 00:00:56,187 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 21
+2023-01-29 00:00:56,187 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 15
+2023-01-29 00:00:56,187 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:56,301 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 7
+2023-01-29 00:00:56,358 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> in an er, new phrase--> in an er, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:00:57,416 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:57,417 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 48
+2023-01-29 00:00:57,417 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 42
+2023-01-29 00:00:57,417 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 27
+2023-01-29 00:00:57,417 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:57,563 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 14
+2023-01-29 00:00:57,649 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> for their patients, new phrase--> for their patients life, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:00:58,773 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:00:58,773 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 47
+2023-01-29 00:00:58,773 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 47
+2023-01-29 00:00:58,773 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 20
+2023-01-29 00:00:58,773 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:00:58,905 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 9
+2023-01-29 00:00:58,971 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> better care, new phrase--> rid of the staff, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:01:00,111 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:00,111 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 49
+2023-01-29 00:01:00,111 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 32
+2023-01-29 00:01:00,111 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 14
+2023-01-29 00:01:00,111 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:00,192 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 7
+2023-01-29 00:01:00,249 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> your time, new phrase--> any time waiting! By, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:01:01,532 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:01,532 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 46
+2023-01-29 00:01:01,532 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 45
+2023-01-29 00:01:01,533 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 21
+2023-01-29 00:01:01,533 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:01,672 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 12
+2023-01-29 00:01:01,757 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> my 2nd appointment, new phrase--> their busiest time, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:01:03,037 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:03,037 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 48
+2023-01-29 00:01:03,037 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 44
+2023-01-29 00:01:03,037 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 20
+2023-01-29 00:01:03,037 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:03,159 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 6
+2023-01-29 00:01:03,214 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> a staff, new phrase--> a staff, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:01:04,376 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:04,376 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 50
+2023-01-29 00:01:04,376 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 50
+2023-01-29 00:01:04,376 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 7
+2023-01-29 00:01:04,376 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:04,431 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 6
+2023-01-29 00:01:04,482 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Dirty office, new phrase--> A patient, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:01:05,618 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:05,618 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 47
+2023-01-29 00:01:05,618 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 46
+2023-01-29 00:01:05,618 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 12
+2023-01-29 00:01:05,618 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:05,700 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 9
+2023-01-29 00:01:05,772 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> was there, new phrase--> was there, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:01:06,894 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:06,894 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 45
+2023-01-29 00:01:06,894 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 35
+2023-01-29 00:01:06,894 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 25
+2023-01-29 00:01:06,894 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:07,013 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 14
+2023-01-29 00:01:07,105 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> even less, new phrase--> had so much, orig_prob--> 0.9998, attack_prob--> 0.9997
+2023-01-29 00:01:08,443 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:08,443 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 47
+2023-01-29 00:01:08,443 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 47
+2023-01-29 00:01:08,443 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 3
+2023-01-29 00:01:08,443 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:08,477 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 3
+2023-01-29 00:01:08,514 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Dr, new phrase--> Nt u? You, orig_prob--> 0.9997, attack_prob--> 0.9997
+2023-01-29 00:01:09,768 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:09,768 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 50
+2023-01-29 00:01:09,768 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 50
+2023-01-29 00:01:09,769 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 1
+2023-01-29 00:01:09,769 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:09,794 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 0
+2023-01-29 00:01:09,794 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:151] - INFO: no candadites of span even meets the filtering requirements
+2023-01-29 00:01:11,039 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:11,040 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 47
+2023-01-29 00:01:11,040 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 44
+2023-01-29 00:01:11,040 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 11
+2023-01-29 00:01:11,040 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:11,118 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 8
+2023-01-29 00:01:11,183 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> waiting, new phrase--> waiting, orig_prob--> 0.9997, attack_prob--> 0.9997
+2023-01-29 00:01:12,453 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:12,453 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 48
+2023-01-29 00:01:12,453 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 42
+2023-01-29 00:01:12,453 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 24
+2023-01-29 00:01:12,453 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:12,621 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 14
+2023-01-29 00:01:12,717 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> less time, new phrase--> less time, orig_prob--> 0.9997, attack_prob--> 0.9997
+2023-01-29 00:01:13,892 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:13,892 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 49
+2023-01-29 00:01:13,892 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 49
+2023-01-29 00:01:13,892 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 15
+2023-01-29 00:01:13,892 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:13,987 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 6
+2023-01-29 00:01:14,044 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Complete lack, new phrase--> a place, orig_prob--> 0.9997, attack_prob--> 0.0244
+2023-01-29 00:01:14,044 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:198] - INFO: attack success!
+2023-01-29 00:01:14,044 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:199] - INFO: adv sentence--> a place of respect for peoples time . A patient and a staff that has had so much respect for their patients life ! Do n't waste any time waiting! By waiting here you 'll spend less time waiting and get rid of the staff in an er ! I have been waiting 1 hr and 30 mins past their busiest time . Nt u? You did n't even know why I was there !
+2023-01-29 00:01:14,044 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:200] - INFO: adv label--> 0
+2023-01-29 00:01:14,044 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:212] - INFO: total examples--> 3, original_accuracy--> 1.0000, success_rate--> 1.0000
+
+
+2023-01-29 00:01:14,044 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:98] - INFO: orginal sentence: One of my favorite restaurants in charlotte . I come here all the time . The view from the patio is peaceful and overlooking charlotte 's skyline . Their food is good . I love their Caesar salad and don 't forget to add salmon !
+2023-01-29 00:01:14,044 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:99] - INFO: label: 0
+2023-01-29 00:01:14,044 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:114] - INFO: original probability: 0.9999
+2023-01-29 00:01:14,093 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:131] - INFO: attack order:  of my favorite restaurants    come here all the time    One    in charlotte    love    charlotte 's    Caesar    from the patio    is peaceful    Their food    is good    add salmon    The view
+2023-01-29 00:01:14,792 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:14,792 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 50
+2023-01-29 00:01:14,792 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 34
+2023-01-29 00:01:14,792 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 29
+2023-01-29 00:01:14,792 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:15,003 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 14
+2023-01-29 00:01:15,073 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> of my favorite restaurants, new phrase--> thing about me is the location, orig_prob--> 0.9999, attack_prob--> 0.9998
+2023-01-29 00:01:15,881 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:15,881 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 48
+2023-01-29 00:01:15,881 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 48
+2023-01-29 00:01:15,881 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 26
+2023-01-29 00:01:15,881 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:16,074 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 17
+2023-01-29 00:01:16,161 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> come here all the time, new phrase--> have heard great things about all the places, orig_prob--> 0.9998, attack_prob--> 0.9998
+2023-01-29 00:01:16,980 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:16,980 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 49
+2023-01-29 00:01:16,980 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 31
+2023-01-29 00:01:16,980 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 22
+2023-01-29 00:01:16,980 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:17,057 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 15
+2023-01-29 00:01:17,130 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> One, new phrase--> The coolest, orig_prob--> 0.9998, attack_prob--> 0.9985
+2023-01-29 00:01:17,999 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:17,999 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 27
+2023-01-29 00:01:17,999 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 25
+2023-01-29 00:01:17,999 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 12
+2023-01-29 00:01:17,999 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:18,081 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 7
+2023-01-29 00:01:18,133 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> in charlotte, new phrase--> and the atmosphere, orig_prob--> 0.9985, attack_prob--> 0.9982
+2023-01-29 00:01:19,089 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:19,089 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 46
+2023-01-29 00:01:19,089 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 45
+2023-01-29 00:01:19,089 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 22
+2023-01-29 00:01:19,089 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:19,203 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 9
+2023-01-29 00:01:19,263 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> love, new phrase--> hope you all enjoy, orig_prob--> 0.9982, attack_prob--> 0.9949
+2023-01-29 00:01:20,105 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:20,105 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 48
+2023-01-29 00:01:20,105 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 29
+2023-01-29 00:01:20,105 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 24
+2023-01-29 00:01:20,105 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:20,222 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 8
+2023-01-29 00:01:20,277 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> charlotte 's, new phrase--> the downtown, orig_prob--> 0.9949, attack_prob--> 0.9932
+2023-01-29 00:01:21,133 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:21,133 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 46
+2023-01-29 00:01:21,133 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 45
+2023-01-29 00:01:21,133 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 5
+2023-01-29 00:01:21,133 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:21,167 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 3
+2023-01-29 00:01:21,201 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Caesar, new phrase--> Caesar, orig_prob--> 0.9932, attack_prob--> 0.9932
+2023-01-29 00:01:22,044 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:22,044 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 48
+2023-01-29 00:01:22,045 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 47
+2023-01-29 00:01:22,045 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 33
+2023-01-29 00:01:22,045 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:22,249 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 15
+2023-01-29 00:01:22,335 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> from the patio, new phrase--> from the patio, orig_prob--> 0.9932, attack_prob--> 0.9932
+2023-01-29 00:01:23,243 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:23,243 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 47
+2023-01-29 00:01:23,243 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 40
+2023-01-29 00:01:23,243 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 12
+2023-01-29 00:01:23,243 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:23,305 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 6
+2023-01-29 00:01:23,353 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> is peaceful, new phrase--> is peaceful, orig_prob--> 0.9932, attack_prob--> 0.9932
+2023-01-29 00:01:24,294 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:24,294 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 46
+2023-01-29 00:01:24,294 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 39
+2023-01-29 00:01:24,294 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 11
+2023-01-29 00:01:24,294 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:24,339 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 6
+2023-01-29 00:01:24,386 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Their food, new phrase--> Their food, orig_prob--> 0.9932, attack_prob--> 0.9932
+2023-01-29 00:01:25,272 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:25,272 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 50
+2023-01-29 00:01:25,272 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 50
+2023-01-29 00:01:25,272 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 9
+2023-01-29 00:01:25,272 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:25,317 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 7
+2023-01-29 00:01:25,366 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> is good, new phrase--> is good, orig_prob--> 0.9932, attack_prob--> 0.9932
+2023-01-29 00:01:26,268 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:26,268 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 46
+2023-01-29 00:01:26,268 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 44
+2023-01-29 00:01:26,268 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 19
+2023-01-29 00:01:26,268 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:26,407 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 8
+2023-01-29 00:01:26,464 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> add salmon, new phrase--> check their wine list, orig_prob--> 0.9932, attack_prob--> 0.9766
+2023-01-29 00:01:27,441 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:27,441 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 43
+2023-01-29 00:01:27,441 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 33
+2023-01-29 00:01:27,442 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 8
+2023-01-29 00:01:27,442 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:27,490 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 4
+2023-01-29 00:01:27,531 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> The view, new phrase--> The view, orig_prob--> 0.9766, attack_prob--> 0.9766
+2023-01-29 00:01:27,531 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:206] - INFO: attack fail!
+2023-01-29 00:01:27,532 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:207] - INFO: failed adv sentence--> The coolest thing about me is the location and the atmosphere . I have heard great things about all the places . The view from the patio is peaceful and overlooking the downtown skyline . Their food is good . I hope you all enjoy their Caesar salad and do n't forget to check their wine list !
+2023-01-29 00:01:27,532 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:212] - INFO: total examples--> 4, original_accuracy--> 1.0000, success_rate--> 0.7500
+
+
+2023-01-29 00:01:27,532 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:98] - INFO: orginal sentence: My mom loves this place as she loves the Coca - Cola brand who somehow transformed their soda company into an entertainment company with merchandise . Kudos . That being said , this is a very fun , family - friendly , thing to do on the strip . There is a polar bear , soda tastings and of course merchandise ! Love this place !
+2023-01-29 00:01:27,532 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:99] - INFO: label: 1
+2023-01-29 00:01:27,532 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:114] - INFO: original probability: 0.9999
+2023-01-29 00:01:27,601 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:131] - INFO: attack order:  Love this place    a very fun , family - friendly , thing    My mom    a polar bear    on the strip    with merchandise    said    of course    this place    soda tastings    Coca    into an entertainment company    Cola    somehow    Kudos    That being    their soda company
+2023-01-29 00:01:28,620 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:28,620 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 42
+2023-01-29 00:01:28,620 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 42
+2023-01-29 00:01:28,620 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 13
+2023-01-29 00:01:28,620 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:28,674 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 10
+2023-01-29 00:01:28,741 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> Love this place, new phrase--> Also see some pictures below, orig_prob--> 0.9999, attack_prob--> 0.9998
+2023-01-29 00:01:29,763 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:29,763 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 50
+2023-01-29 00:01:29,763 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 50
+2023-01-29 00:01:29,763 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 36
+2023-01-29 00:01:29,763 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:30,231 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 18
+2023-01-29 00:01:30,339 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> a very fun , family - friendly , thing, new phrase--> not the place you’d want, orig_prob--> 0.9998, attack_prob--> 0.8329
+2023-01-29 00:01:31,384 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:62] - INFO: number of total samples: 50
+2023-01-29 00:01:31,384 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:63] - INFO: nunmber of examples that keep the original sentences: 49
+2023-01-29 00:01:31,384 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:68] - INFO: nunmber of total distinct examples: 49
+2023-01-29 00:01:31,385 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:84] - INFO: number of examples meeting length and punctutation threshold: 26
+2023-01-29 00:01:31,385 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:91] - INFO: begin computing likelihoods
+2023-01-29 00:01:31,598 - /home/yuling/sentence-level/PLAT/utils/fill_mask.py[line:209] - INFO: number of examples meeting sentiment threshold: 11
+2023-01-29 00:01:31,676 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:174] - INFO: attacked phrase--> My mom, new phrase--> One character actually, orig_prob--> 0.8329, attack_prob--> 0.0160
+2023-01-29 00:01:31,677 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:198] - INFO: attack success!
+2023-01-29 00:01:31,677 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:199] - INFO: adv sentence--> One character actually loves this place as she loves the Coca - Cola brand who somehow transformed their soda company into an entertainment company with merchandise . Kudos . That being said , this is not the place you’d want to do on the strip . There is a polar bear , soda tastings and of course merchandise ! Also see some pictures below !
+2023-01-29 00:01:31,677 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:200] - INFO: adv label--> 1
+2023-01-29 00:01:31,677 - /home/yuling/sentence-level/PLAT/phrase_attack.py[line:212] - INFO: total examples--> 5, original_accuracy--> 1.0000, success_rate--> 0.8000
+
+

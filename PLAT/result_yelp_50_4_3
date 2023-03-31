@@ -1,0 +1,88 @@
+Index:  0
+original sentence: Flat Iron Steak was prepared very well , delivered Medium Rare exactly . Exemplary service and friendly staff . My iced tea glass was refilled regularly . Nothing to complain about here . Good chain restaurant with predictably good quality and predictably good service .
+label: Postive, original probability: 0.9999
+attack order:  Exemplary service and friendly staff    predictably good quality    Good chain restaurant    very well    about here    Medium Rare    predictably    Flat Iron Steak    good service    My iced tea glass    refilled regularly    exactly
+attacked phrase--> Exemplary service and friendly staff, new phrase--> It also used very little cheese, orig_prob--> 0.9999, attack_prob--> 0.9999
+attacked phrase--> predictably good quality, new phrase--> easy food, orig_prob--> 0.9999, attack_prob--> 0.9998
+attacked phrase--> Good chain restaurant, new phrase--> It was served well, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> very well, new phrase--> to order, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> about here, new phrase--> about here, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> Medium Rare, new phrase--> without assistance and was packed, orig_prob--> 0.9998, attack_prob--> 0.9996
+attacked phrase--> predictably, new phrase--> had, orig_prob--> 0.9996, attack_prob--> 0.9994
+attacked phrase--> Flat Iron Steak, new phrase--> The food itself, orig_prob--> 0.9994, attack_prob--> 0.9950
+attacked phrase--> good service, new phrase--> a good crunch to it, orig_prob--> 0.9950, attack_prob--> 0.9687
+attacked phrase--> My iced tea glass, new phrase--> It used only regular butter and, orig_prob--> 0.9687, attack_prob--> 0.8919
+attacked phrase--> refilled regularly, new phrase--> left in the fridge unperformed, orig_prob--> 0.8919, attack_prob--> 0.1310
+adv sentence--> The food itself was prepared to order , delivered without assistance and was packed exactly . It also used very little cheese . It used only regular butter and was left in the fridge unperformed . Nothing to complain about here . It was served well with easy food and had a good crunch to it .
+adv label--> 1
+total examples--> 1, original_accuracy--> 1.0000, success_rate--> 1.0000
+______________________________
+
+Index:  1
+original sentence: Already LOVE the doughnuts ... . . but when they were out of what I wanted , and gave it to me free when it was ready , they had my heart ! Way to go on excellent customer service ! ! !
+label: 1, original probability: 0.9999
+attack order:  LOVE    on excellent customer service    the doughnuts    ....
+attacked phrase--> LOVE, new phrase--> hungry for, orig_prob--> 0.9999, attack_prob--> 0.9833
+attacked phrase--> on excellent customer service, new phrase--> boys!I'm in bed, orig_prob--> 0.9833, attack_prob--> 0.0238
+adv sentence--> Already hungry for the doughnuts .... . Way to go boys!I'm in bed !!!
+adv label--> 1
+total examples--> 2, original_accuracy--> 1.0000, success_rate--> 1.0000
+______________________________
+
+Index:  2
+original sentence: Complete lack of respect for peoples time . Dirty office and a staff that has even less respect for their patients ! Don 't waste your time waiting here you 'll spend less time waiting and get better care in an er ! . I have been waiting 1hr and 30 mins past my 2nd appointment . Dr didn 't even know why I was there !
+label: 1, original probability: 0.9998
+attack order:  for peoples    in an er    for their patients    better care    your time    my 2nd appointment    a staff    Dirty office    was there    even less    Dr    even    waiting    less time    Complete lack    time    respect
+attacked phrase--> for peoples, new phrase--> for peoples, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> in an er, new phrase--> in an er, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> for their patients, new phrase--> for their patients life, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> better care, new phrase--> rid of the staff, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> your time, new phrase--> any time waiting! By, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> my 2nd appointment, new phrase--> their busiest time, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> a staff, new phrase--> a staff, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> Dirty office, new phrase--> A patient, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> was there, new phrase--> was there, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> even less, new phrase--> had so much, orig_prob--> 0.9998, attack_prob--> 0.9997
+attacked phrase--> Dr, new phrase--> Nt u? You, orig_prob--> 0.9997, attack_prob--> 0.9997
+no candadites of span even meets the filtering requirements
+attacked phrase--> waiting, new phrase--> waiting, orig_prob--> 0.9997, attack_prob--> 0.9997
+attacked phrase--> less time, new phrase--> less time, orig_prob--> 0.9997, attack_prob--> 0.9997
+attacked phrase--> Complete lack, new phrase--> a place, orig_prob--> 0.9997, attack_prob--> 0.0244
+adv sentence--> a place of respect for peoples time . A patient and a staff that has had so much respect for their patients life ! Do n't waste any time waiting! By waiting here you 'll spend less time waiting and get rid of the staff in an er ! I have been waiting 1 hr and 30 mins past their busiest time . Nt u? You did n't even know why I was there !
+adv label--> 0
+total examples--> 3, original_accuracy--> 1.0000, success_rate--> 1.0000
+______________________________
+
+Index:  3
+original sentence: One of my favorite restaurants in charlotte . I come here all the time . The view from the patio is peaceful and overlooking charlotte 's skyline . Their food is good . I love their Caesar salad and don 't forget to add salmon !
+label: 0, original probability: 0.9999
+attack order:  of my favorite restaurants    come here all the time    One    in charlotte    love    charlotte 's    Caesar    from the patio    is peaceful    Their food    is good    add salmon    The view
+attacked phrase--> of my favorite restaurants, new phrase--> thing about me is the location, orig_prob--> 0.9999, attack_prob--> 0.9998
+attacked phrase--> come here all the time, new phrase--> have heard great things about all the places, orig_prob--> 0.9998, attack_prob--> 0.9998
+attacked phrase--> One, new phrase--> The coolest, orig_prob--> 0.9998, attack_prob--> 0.9985
+attacked phrase--> in charlotte, new phrase--> and the atmosphere, orig_prob--> 0.9985, attack_prob--> 0.9982
+attacked phrase--> love, new phrase--> hope you all enjoy, orig_prob--> 0.9982, attack_prob--> 0.9949
+attacked phrase--> charlotte 's, new phrase--> the downtown, orig_prob--> 0.9949, attack_prob--> 0.9932
+attacked phrase--> Caesar, new phrase--> Caesar, orig_prob--> 0.9932, attack_prob--> 0.9932
+attacked phrase--> from the patio, new phrase--> from the patio, orig_prob--> 0.9932, attack_prob--> 0.9932
+attacked phrase--> is peaceful, new phrase--> is peaceful, orig_prob--> 0.9932, attack_prob--> 0.9932
+attacked phrase--> Their food, new phrase--> Their food, orig_prob--> 0.9932, attack_prob--> 0.9932
+attacked phrase--> is good, new phrase--> is good, orig_prob--> 0.9932, attack_prob--> 0.9932
+attacked phrase--> add salmon, new phrase--> check their wine list, orig_prob--> 0.9932, attack_prob--> 0.9766
+attacked phrase--> The view, new phrase--> The view, orig_prob--> 0.9766, attack_prob--> 0.9766
+failed adv sentence--> The coolest thing about me is the location and the atmosphere . I have heard great things about all the places . The view from the patio is peaceful and overlooking the downtown skyline . Their food is good . I hope you all enjoy their Caesar salad and do n't forget to check their wine list !
+total examples--> 4, original_accuracy--> 1.0000, success_rate--> 0.7500
+______________________________
+
+Index:  4
+original sentence: My mom loves this place as she loves the Coca - Cola brand who somehow transformed their soda company into an entertainment company with merchandise . Kudos . That being said , this is a very fun , family - friendly , thing to do on the strip . There is a polar bear , soda tastings and of course merchandise ! Love this place !
+label: 1, original probability: 0.9999
+attack order:  Love this place    a very fun , family - friendly , thing    My mom    a polar bear    on the strip    with merchandise    said    of course    this place    soda tastings    Coca    into an entertainment company    Cola    somehow    Kudos    That being    their soda company
+attacked phrase--> Love this place, new phrase--> Also see some pictures below, orig_prob--> 0.9999, attack_prob--> 0.9998
+attacked phrase--> a very fun , family - friendly , thing, new phrase--> not the place you’d want, orig_prob--> 0.9998, attack_prob--> 0.8329
+attacked phrase--> My mom, new phrase--> One character actually, orig_prob--> 0.8329, attack_prob--> 0.0160
+adv sentence--> One character actually loves this place as she loves the Coca - Cola brand who somehow transformed their soda company into an entertainment company with merchandise . Kudos . That being said , this is not the place you’d want to do on the strip . There is a polar bear , soda tastings and of course merchandise ! Also see some pictures below !
+adv label--> 1
+total examples--> 5, original_accuracy--> 1.0000, success_rate--> 0.8000
+______________________________
+
