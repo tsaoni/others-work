@@ -3,6 +3,8 @@
 ## 🍡 github
 **Must-read Papers on Textual Adversarial Attack and Defense (TAAD)**
 [[github]](https://github.com/thunlp/TAADpapers) <br>
+**OpenBackdoor**
+[[github]](https://github.com/thunlp/OpenBackdoor) <br>
 **PromptPapers**
 [[github]](https://github.com/thunlp/PromptPapers) <br>
 **Awesome Incremental Learning / Lifelong learning**
